@@ -4,6 +4,7 @@ const port = 3030;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
+app.use(cors());
 
 // Sample route
 app.get('/', (req, res) => {
