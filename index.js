@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-app.post('/visited-countries', (req, res) => {
+app.post('/api/countries', (req, res) => {
   const traveler = req.body['name'];
   const countries = req.body['countries'];
 
